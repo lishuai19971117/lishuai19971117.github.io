@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="欢迎来到我的空间">
+<meta name="description" content="绘制方块  &amp;lt;canvas id = &amp;quot;canvas&amp;quot; width = &amp;quot;400&amp;quot; height =&amp;quot;400&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;script&amp;gt;     var canv = docunment.getElementById(&amp;quot;canvas&amp;quot;);     var ctx = ca">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2018/04/index.html">
+<meta property="og:title" content="canvass的使用">
+<meta property="og:url" content="http://yoursite.com/canvas的妙用.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="欢迎来到我的空间">
+<meta property="og:description" content="绘制方块  &amp;lt;canvas id = &amp;quot;canvas&amp;quot; width = &amp;quot;400&amp;quot; height =&amp;quot;400&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;script&amp;gt;     var canv = docunment.getElementById(&amp;quot;canvas&amp;quot;);     var ctx = ca">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-19T11:56:40.003Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="欢迎来到我的空间">
+<meta name="twitter:title" content="canvass的使用">
+<meta name="twitter:description" content="绘制方块  &amp;lt;canvas id = &amp;quot;canvas&amp;quot; width = &amp;quot;400&amp;quot; height =&amp;quot;400&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;script&amp;gt;     var canv = docunment.getElementById(&amp;quot;canvas&amp;quot;);     var ctx = ca">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2018/04/"/>
+  <link rel="canonical" href="http://yoursite.com/canvas的妙用.html"/>
 
 
 
 
 
-  <title>归档 | Hexo</title>
+  <title>canvass的使用 | Hexo</title>
   
 
 
@@ -143,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-right page-archive">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/lishuai19971117"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub"></a>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,74 +218,54 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
 
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 1 篇日志。 继续努力。
-      </span>
+	<h1 class="post-title" itemprop="name headline">canvass的使用</h1>
+
+
+
+</header>
 
       
+      
+      
+      <div class="post-body">
+        
+        
+          <h3 id="绘制方块"><a href="#绘制方块" class="headerlink" title="绘制方块"></a>绘制方块</h3><pre><code>  &lt;canvas id = &quot;canvas&quot; width = &quot;400&quot; height =&quot;400&quot;&gt;&lt;/canvas&gt;
+&lt;script&gt;
+    var canv = docunment.getElementById(&quot;canvas&quot;);
+    var ctx = canv.getContext(&quot;2d&quot;);
+    ctx.fillRect(50,50,100,100);
+&lt;/script&gt;
+</code></pre><blockquote>
+<blockquote>
+<p>该代码会生成一个100像素*100像素的方块，坐标在该画布的（50,50），颜色默认黑色，如果想改变颜色，可以在fillRect之前添加fillStyle函数.如：</p>
+</blockquote>
+</blockquote>
+<pre><code>ctx.fillStyle = &quot;Red&quot;；
+ctx.fillRect(50,50,100,100);
+</code></pre><blockquote>
+<blockquote>
+<p>即可使方块变成红色的，将多种方块巧妙地组合，可以得到很多有趣的东西，比如可以用黑白两种颜色的方块按规律排列便可以得到一张国际象棋棋盘。</p>
+</blockquote>
+</blockquote>
 
         
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/04/11/学习目标与学习计划/" itemprop="url">
-              
-                <span itemprop="name">学习目标与学习计划</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-11T09:04:59+08:00"
-              content="2018-04-11" >
-          04-11
-        </time>
       </div>
-
-    </header>
-  </article>
-
-
-
       
-
+      
+      
     </div>
+    
+    
+    
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -292,6 +273,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -312,8 +297,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -355,6 +349,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#绘制方块"><span class="nav-number">1.</span> <span class="nav-text">绘制方块</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -500,6 +510,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
