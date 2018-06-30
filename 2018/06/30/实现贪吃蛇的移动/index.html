@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="学习目标与学习计划  我在大一下学期学习web前端时对web前端的基础知识的掌握并不是很理想，所以我在定目标时基于我自身的情况选择了并不是高阶的web前端知识，希望自己稳扎稳打，逐渐提高我对web前端的兴趣。    一、学习目标12345671.能够基于JQuery实现炫酷效果和复杂的功能模块；2.能创造或添加自定义效果到网页上；3.能熟练添加标准的动画效果到网页上；4.熟练操作DOM模型。 二、">
+<meta name="description" content="实现贪吃蛇的移动一个关键是屏幕刷新函数，但只有屏幕刷新是不够的，还需要自己来构造生成方块的函数。首先创建方块对象：  var Block = function(col,row,size)     {         this.col = col;         this.row = row;         this.size = size;     };  三个参数分别是行、列坐标及大小，接">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学习目标与学习计划">
-<meta property="og:url" content="http://yoursite.com/2018/04/11/学习目标与学习计划/index.html">
+<meta property="og:title" content="实现贪吃蛇的移动">
+<meta property="og:url" content="http://yoursite.com/2018/06/30/实现贪吃蛇的移动/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="学习目标与学习计划  我在大一下学期学习web前端时对web前端的基础知识的掌握并不是很理想，所以我在定目标时基于我自身的情况选择了并不是高阶的web前端知识，希望自己稳扎稳打，逐渐提高我对web前端的兴趣。    一、学习目标12345671.能够基于JQuery实现炫酷效果和复杂的功能模块；2.能创造或添加自定义效果到网页上；3.能熟练添加标准的动画效果到网页上；4.熟练操作DOM模型。 二、">
+<meta property="og:description" content="实现贪吃蛇的移动一个关键是屏幕刷新函数，但只有屏幕刷新是不够的，还需要自己来构造生成方块的函数。首先创建方块对象：  var Block = function(col,row,size)     {         this.col = col;         this.row = row;         this.size = size;     };  三个参数分别是行、列坐标及大小，接">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-11T01:05:39.198Z">
+<meta property="og:updated_time" content="2018-06-30T13:37:02.296Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学习目标与学习计划">
-<meta name="twitter:description" content="学习目标与学习计划  我在大一下学期学习web前端时对web前端的基础知识的掌握并不是很理想，所以我在定目标时基于我自身的情况选择了并不是高阶的web前端知识，希望自己稳扎稳打，逐渐提高我对web前端的兴趣。    一、学习目标12345671.能够基于JQuery实现炫酷效果和复杂的功能模块；2.能创造或添加自定义效果到网页上；3.能熟练添加标准的动画效果到网页上；4.熟练操作DOM模型。 二、">
+<meta name="twitter:title" content="实现贪吃蛇的移动">
+<meta name="twitter:description" content="实现贪吃蛇的移动一个关键是屏幕刷新函数，但只有屏幕刷新是不够的，还需要自己来构造生成方块的函数。首先创建方块对象：  var Block = function(col,row,size)     {         this.col = col;         this.row = row;         this.size = size;     };  三个参数分别是行、列坐标及大小，接">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/11/学习目标与学习计划/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/30/实现贪吃蛇的移动/"/>
 
 
 
 
 
-  <title>学习目标与学习计划 | Hexo</title>
+  <title>实现贪吃蛇的移动 | Hexo</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/11/学习目标与学习计划/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/30/实现贪吃蛇的移动/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="李帅">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">学习目标与学习计划</h1>
+          <h1 class="post-title" itemprop="name headline">实现贪吃蛇的移动</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-11T09:04:59+08:00">
-                2018-04-11
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-30T21:05:30+08:00">
+                2018-06-30
               </time>
             
 
@@ -299,14 +299,62 @@
       
 
       
-        <h1 id="学习目标与学习计划"><a href="#学习目标与学习计划" class="headerlink" title="学习目标与学习计划"></a>学习目标与学习计划</h1><ul>
-<li><blockquote>
-<p>我在大一下学期学习web前端时对web前端的基础知识的掌握并不是很理想，所以我在定目标时基于我自身的情况选择了并不是高阶的web前端知识，希望自己稳扎稳打，逐渐提高我对web前端的兴趣。</p>
+        <blockquote>
+<p>实现贪吃蛇的移动一个关键是屏幕刷新函数，但只有屏幕刷新是不够的，还需要自己来构造生成方块的函数。首先创建方块对象：</p>
 </blockquote>
-</li>
-</ul>
-<h2 id="一、学习目标"><a href="#一、学习目标" class="headerlink" title="一、学习目标"></a>一、学习目标</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.能够基于JQuery实现炫酷效果和复杂的功能模块；</span><br><span class="line"></span><br><span class="line">2.能创造或添加自定义效果到网页上；</span><br><span class="line"></span><br><span class="line">3.能熟练添加标准的动画效果到网页上；</span><br><span class="line"></span><br><span class="line">4.熟练操作DOM模型。</span><br></pre></td></tr></table></figure>
-<h2 id="二、学习计划"><a href="#二、学习计划" class="headerlink" title="二、学习计划"></a>二、学习计划</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">学习日程：每周至少拿出一天时间进行学习</span><br><span class="line"></span><br><span class="line">学习渠道选择腾讯课堂web入门学习班和各种网络教学视频</span><br></pre></td></tr></table></figure>
+<pre><code>var Block = function(col,row,size)
+    {
+        this.col = col;
+        this.row = row;
+        this.size = size;
+    };
+</code></pre><blockquote>
+<p>三个参数分别是行、列坐标及大小，接下来创建snake这个对象：</p>
+</blockquote>
+<pre><code>var snake = {
+        body: [
+            new Block(20,20,10),
+            new Block(20,21,10),
+            new Block(20,22,10)
+        ], 
+        direction:&quot;right&quot;,
+    };
+</code></pre><blockquote>
+<p>可以看出这条“蛇”是一个可以增加的方块数组，而direction参数决定蛇的移动方向，起始默认方向为向右。</p>
+</blockquote>
+<blockquote>
+<p>对象创建完毕，接下来就是方法，有两个方法需要我们实现，一个是snake.draw()，另一个是snake.move()，代码如下：</p>
+</blockquote>
+<pre><code>snake.draw = function()
+    {
+        for(var i = 0;i &lt; this.body.length;i++)
+        {
+            this.body[i].draw();
+        }
+    };
+
+snake.move = function()
+        {
+            var head = this.body[0];
+            if(snake.direction == &quot;right&quot;)
+            {
+        var newhead = new Block(head.col + 1,head.row,head.size);
+            }
+        if(snake.direction == &quot;left&quot;)
+        {
+            var newhead = new Block(head.col - 1,head.row,head.size);
+        }
+        if(snake.direction == &quot;up&quot;)
+        {
+            var newhead = new Block(head.col,head.row - 1,head.size);
+        }
+        if(snake.direction == &quot;down&quot;)
+        {
+            var newhead = new Block(head.col,head.row + 1,head.size);
+        }
+</code></pre><blockquote>
+<p>代码中创建了一个变量head，用来保存蛇头的对象。根据贪吃蛇运动的方向创建新的对象newhead，若方向为向右，则head.col+1，其他方向同理。通过unshift方法讲对象newhead添加到数组中。通过pop方法将数组中最后一个对象删除。</p>
+</blockquote>
 
       
     </div>
@@ -327,6 +375,26 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/30/clearInterval的用法/" rel="next" title="clearInterval的用法">
+                <i class="fa fa-chevron-left"></i> clearInterval的用法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/30/实现贪吃蛇的控制/" rel="prev" title="实现贪吃蛇的控制">
+                实现贪吃蛇的控制 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -375,17 +443,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -400,7 +459,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -427,22 +486,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#学习目标与学习计划"><span class="nav-number">1.</span> <span class="nav-text">学习目标与学习计划</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、学习目标"><span class="nav-number">1.1.</span> <span class="nav-text">一、学习目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、学习计划"><span class="nav-number">1.2.</span> <span class="nav-text">二、学习计划</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
